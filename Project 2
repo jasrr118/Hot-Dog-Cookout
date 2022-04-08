@@ -1,0 +1,18 @@
+number_of_guest_attending = int(input("Enter number of guest attending: "))
+number_of_hotdogs_per_guest = int(input("Enter number of hot dogs: "))
+
+hotdogs_per_package = 10
+hotdog_buns_per_package = 8 
+
+total_number_of_hotdogs = number_of_guest_attending * number_of_hotdogs_per_guest
+
+hotdog_packages_required = total_number_of_hotdogs // hotdogs_per_package
+hotdog_buns_required = total_number_of_hotdogs // hotdog_buns_per_package
+hotdogs_remaining = total_number_of_hotdogs % hotdogs_per_package
+hotdog_buns_remaining = total_number_of_hotdogs % hotdog_buns_per_package
+
+print("Minimum number of packages of hotdog buns required =", hotdog_buns_required)
+print("Minumum number of packages of hotdogs required =", hotdog_packages_required)
+print("Number of hotdog buns left over =", hotdog_buns_remaining)
+print("Number of hotdogs left over =", hotdogs_remaining)
+
